@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntinhas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <h2>Perguntinhas</h2>
+        <form id="quiz-form">
+            <div class="quiz-question" id="question1">
+                <p>1. O que eu mais gosto em você?</p>
+                <input type="radio" name="q1" value="simplicidade"> Humildade<br>
+                <input type="radio" name="q1" value="bondade"> Bondade<br>
+                <input type="radio" name="q1" value="confianca"> Confiabilidade<br>
+                <button type="button" onclick="submitQuiz1(1)">Próxima</button>
+            </div>
+            <div class="quiz-question" id="question2" style="display:none;">
+                <p>2. Qual parte mais gosto do seu rosto?</p>
+                <input type="radio" name="q2" value="olhar"> Olhar<br>
+                <input type="radio" name="q2" value="sorriso"> Sorriso<br>
+                <input type="radio" name="q2" value="formato"> Formato<br>
+                <button type="button" onclick="submitQuiz1(2)">Próxima</button>
+            </div>
+            <div class="quiz-question" id="question3" style="display:none;">
+                <p>3. Qual parte mais gosto do seu corpo?</p>
+                <input type="radio" name="q3" value="bundinha"> Bundinha<br>
+                <input type="radio" name="q3" value="barriguinha"> Barriguinha<br>
+                <input type="radio" name="q3" value="pescocin"> Pescoçin<br>
+                <button type="button" onclick="submitQuiz1(3)">Próxima</button>
+            </div>
+            <div class="quiz-question" id="question4" style="display:none;">
+                <p>4. Qual minha posição favorita?</p>
+                <input type="radio" name="q4" value="sentado"> Atacante<br>
+                <input type="radio" name="q4" value="deitado"> Deitado<br>
+                <input type="radio" name="q4" value="esquerda"> Politicamente posicionado à esquerda revolucionária<br>
+                <button type="button" onclick="submitQuiz1(4)">Próxima</button>
+            </div>
+            <div class="quiz-question" id="question5" style="display:none;">
+                <p>5. Em que ano o Corinthians ganhou o mundial contra o Chelsea?</p>
+                <input type="radio" name="q5" value="2012"> 2012<br>
+                <input type="radio" name="q5" value="2011"> 2013<br>
+                <input type="radio" name="q5" value="2009"> 2009<br>
+                <button type="button" onclick="submitQuiz1(5)">Finalizar</button>
+            </div>
+        </form>
+        <div id="result-container" style="display:none;">
+            <p id="result"></p>
+            <button id="retry-button" onclick="retryQuiz()" style="display:none;">Reiniciar Quiz</button>
+            <button id="next-page-button" onclick="window.location.href='quiz2.html'" style="display:none;">Próxima</button>
+        </div>
+    </div>
+    <script src="quiz1.js"></script>
+</body>
+</html>

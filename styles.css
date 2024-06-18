@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #7CDDFF , #7D11BC);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.text-container{
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.text-container p {
+    text-align: inherit;
+}
+
+
+.content-container {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-container {
+    width: 80%;
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#game-container {
+    margin-bottom: 20px;
+}
+
+#hint-container {
+    margin-bottom: 20px;
+}
+
+#hint-text {
+    font-size: 18px;
+}
+
+#code-container {
+    margin-bottom: 20px;
+}
+
+#code-input {
+    padding: 8px;
+    margin: 0 10px;
+    width: 150px;
+}
+
+#next-page-button {
+    display: none;
+    margin: 20px auto; /* Centraliza o botão na horizontal */
+    text-align: center; /* Alinha o texto (caso haja) ao centro */
+}
+
+.photo-frame {
+    border: 5px solid #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.question-container, .image-question-container {
+    margin: 20px 0;
+}
+
+.image-question-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#quiz-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#quiz-content .question {
+    display: flex;
+    justify-content: center;
+}
+
+#video-container {
+    position: relative;
+    width: 80%;
+    padding-top: 56.25%; /* Proporção de 16:9 para vídeos responsivos */
+    margin-bottom: 20px;
+}
+#video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

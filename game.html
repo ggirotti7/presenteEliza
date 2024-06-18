@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <h2>Para avançar, descubra o código de 5 dígitos de acordo com as dicas</h2>
+        <p style="color: red;">*Atualizar página para voltar pra primeira dica</p>
+        <div id="game-container">
+            <div id="hint-container">
+                <p id="hint-text"><span id="hint"></span></p>
+            </div>
+            <button id="next-button" onclick="showNextHint()">Mostrar Próxima Dica</button>
+        </div>
+        <div id="code-container">
+            <input placeholder="Digite o código" type="text" id="code-input">
+            <button onclick="checkCode()">Verificar</button>
+        </div>
+        <button id="next-page-button" style="display:none;" onclick="window.location.href='quiz1.html'">Acertou! Avançar</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
